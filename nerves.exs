@@ -1,12 +1,12 @@
 use Mix.Config
 
-@version 0.0.1
+version = 0.0.1
 
 pkg = :nerves_system_rpi2_kiosk
 
 config pkg, :nerves_env,
   type:  :system,
-  version: @version,
+  version: version,
   compiler: :nerves_package,
   #artifact_url: [
   #  
