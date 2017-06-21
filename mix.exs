@@ -1,4 +1,4 @@
-defmodule NervesSystemRpi2.Mixfile do
+defmodule NervesSystemRpi2Kiosk.Mixfile do
   use Mix.Project
 
   @version Path.join(__DIR__, "VERSION")
@@ -28,7 +28,7 @@ defmodule NervesSystemRpi2.Mixfile do
 
   defp description do
     """
-    Nerves System - Raspberry Pi 2 B
+    Nerves System - Raspberry Pi 2 B Kiosk
     """
   end
 
