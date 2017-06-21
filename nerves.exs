@@ -1,6 +1,9 @@
 use Mix.Config
 
-version = 0.0.1
+version =
+  Path.join(__DIR__, "VERSION")
+  |> File.read!
+  |> String.strip
 
 pkg = :nerves_system_rpi2_kiosk
 
