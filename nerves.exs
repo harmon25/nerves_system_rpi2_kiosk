@@ -1,6 +1,6 @@
 use Mix.Config
 
-@version = 0.0.1
+@version 0.0.1
 
 pkg = :nerves_system_rpi2_kiosk
 
