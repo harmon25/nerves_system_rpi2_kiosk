@@ -1,19 +1,16 @@
 use Mix.Config
 
-version =
-  Path.join(__DIR__, "VERSION")
-  |> File.read!
-  |> String.strip
+@version = 0.0.1
 
-pkg = :nerves_system_rpi2
+pkg = :nerves_system_rpi2_kiosk
 
 config pkg, :nerves_env,
   type:  :system,
-  version: version,
+  version: @version,
   compiler: :nerves_package,
-  artifact_url: [
-    "https://github.com/nerves-project/#{pkg}/releases/download/v#{version}/#{pkg}-v#{version}.tar.gz"
-  ],
+  #artifact_url: [
+  #  
+  #],
   platform: Nerves.System.BR,
   platform_config: [
     defconfig: "nerves_defconfig"
